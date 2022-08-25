@@ -1,101 +1,89 @@
 .review__title{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: @black-text;
   margin:0;
   padding-top: 24px;
   padding-bottom: 20px;
 
 }
 .review__title:not(:first-child){
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid @light-border;
 }
 .review__slogan{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  color: #333333;
+  color: @grey-text;
   margin:0;
 }
 .review__introduce-name{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: @grey-text;
 }
 .review__introduce-text{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
-  background: #F2F2F2;
+  color: @black-text;
+  background-color: @white-back;
   padding: 16px;
   border: none;
   margin-bottom:16px;
 }
 .review__contact-text{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
+  color: @black-text;
   padding: 16px;
-  background: #F2F2F2;
+  background-color: @white-back;
   border:none;
   margin-bottom: 16px;
 }
 .review__impression-title{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: @black-text;
 }
 .review__impression-input{
   padding: 15px;
-  background: #F2F2F2;
+  background-color: @white-back;
 }
 .review__showplace-title{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: @black-text;
 }
 .review__showplace-input{
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background: #F2F2F2;
+  background-color: @white-back;
 }
 .review__emotion-input{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
+  color: @black-text;
   padding:16px;
-  background: #F2F2F2;
-  width: 247px;
-  height: 118px;
+  background-color: @white-back;
   border: none;
   margin-bottom: 56px;
 }
@@ -106,27 +94,24 @@
   padding-bottom: 13.5px;
 }
 .review__legend{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
-  color: rgba(51, 51, 51, 0.6);
+  color: @rgba-grey;
   margin:0;
   text-align: right;
 }
 .review__wrapper{
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 .review__form{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid @light-border;
 }
 .review__container-impression{
   display:flex;
@@ -135,30 +120,35 @@
 .review__header{
   padding-top: 12px;
   padding-bottom: 28px;
-
 }
 .review__container-intoduce{
   display: flex;
   flex-direction: column;
-
   padding-bottom: 23px;
-
 }
 .review__container-contact{
   display: flex;
   flex-direction: column;
   padding-bottom: 18px;
-
 }
-.review__container-impression-last{
+.review__container-impession--last{
   margin-bottom: 24px;
 }
-
-
 .review__container-showplace{
   margin-bottom: 16px;
 }
-.review__container-showplace-last{
+.review__container-showplace--last{
   margin-bottom: 24px;
 }
-
+.review__contact-icon{
+  background: @another-back url(../img/phone.svg) no-repeat;
+  background-size: 18px, 18px;
+  padding: 20px;
+  background-position: center;
+}
+.review__email-icon{
+  background: @another-back url(../img/mail.svg) no-repeat;
+  background-size: 16px, 12px;
+  padding: 20px;
+  background-position: center;
+}

@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="./css/style.css">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона»</title>
 </head>
 <body class="page__body">
@@ -41,18 +42,8 @@
   <main class="main-container">
     <h1 class="visually-hidden">Седона</h1>
     <section class="logo">
-      <svg class="logo-text" width="282" height="49" viewBox="0 0 282 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M27.1874 13.3723C24.978 11.5378 22.2163 10.3148 19.2705 10.3148C17.0612 10.3148 14.1767 11.5989 14.1767 14.1672C14.1767 16.8578 17.4294 17.8973 19.4546 18.5088L22.5232 19.426C28.9058 21.3216 33.8768 24.5014 33.8768 31.9005C33.8768 36.4255 32.7721 41.134 29.1513 44.1915C25.5304 47.2489 20.7434 48.4719 16.1406 48.4719C10.3717 48.4719 4.6642 46.5151 0 43.2742L4.97106 33.7961C7.97824 36.4255 11.4764 38.5046 15.5882 38.5046C18.4113 38.5046 21.3571 37.0981 21.3571 33.9184C21.3571 30.5552 16.6929 29.4545 14.1153 28.7207C6.62807 26.5193 1.71839 24.6237 1.71839 15.7571C1.71839 6.46239 8.34646 0.408615 17.5521 0.408615C22.155 0.408615 27.8625 1.8762 31.913 4.19987L27.1874 13.3723Z" fill="white"/>
-        <path d="M56.2158 11.6602V19.3038H69.6561V29.3935H56.2158V37.2817H70.4539V47.3713H44.3098V1.63171H70.4539V11.7213L56.2158 11.6602Z" fill="white"/>
-        <path d="M79.2914 1.63171H96.2298C108.995 1.63171 119.551 11.6602 119.551 24.5015C119.551 37.3429 108.934 47.3713 96.2298 47.3713H79.2914V1.63171ZM91.2587 37.2817H93.9591C101.078 37.2817 107.154 33.3682 107.154 24.5015C107.154 16.3075 101.753 11.7213 94.0818 11.7213H91.2587V37.2817Z" fill="white"/>
-        <path d="M175.951 23.6453C175.951 38.4434 165.272 48.8999 150.543 48.8999C135.814 48.8999 125.136 38.4434 125.136 23.6453C125.136 9.82554 137.348 0.102814 150.543 0.102814C163.738 0.102814 175.951 9.82554 175.951 23.6453ZM137.533 23.7064C137.533 31.5947 143.363 37.3427 150.482 37.3427C157.601 37.3427 163.431 31.5947 163.431 23.7064C163.431 17.408 157.601 11.5989 150.482 11.5989C143.424 11.5989 137.533 17.408 137.533 23.7064Z" fill="white"/>
-        <path d="M182.272 1.63171H194.239L216.087 29.6381H216.21V1.63171H228.178V47.3713H216.21L194.362 19.3038H194.239V47.3713H182.272V1.63171Z" fill="white"/>
-        <path d="M249.842 39.4219L246.65 47.3713H234.008L251.683 1.63171H264.693L282 47.3713H269.296L266.289 39.4219H249.842ZM258.188 15.7572H258.065L253.156 30.3107H263.098L258.188 15.7572Z" fill="white"/>
-        </svg>
-        <svg class="logo__triangle-top" width="320" height="57" viewBox="0 0 320 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-190.171 23.7L-440 0V57H-190.171H160.55L-190.171 0V23.7Z" fill="white"/>
-          <path d="M511.271 23.7V0L160.55 57H511.271H761V0L511.271 23.7Z" fill="white"/>
-          </svg>
+      <img class="logo-text" width="282" height="49" src="img/textlogo-SEDONA.svg" alt="седона">
+      <img class="logo__triangle-top" width="320" height="57" src="img/logo-devider-top.svg" alt="графика блока">
     </section>
     <section class="review">
       <div class="review__wrapper">
@@ -81,9 +72,15 @@
       </h2>
       <div class="review__container-contact">
         <label class="review__contact" for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+      <article class="container">
         <input class="review__contact-text" id="phone" type="tel" name="Телефон" placeholder="Введите телефон" required="">
+        <span class="review__contact-icon"></span>
+      </article>
         <label class="review__contact" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+        <article class="container">
         <input class="review__contact-text" id="email" type="email" name="Почта" placeholder="Введите e-mail" required="">
+        <span class="review__email-icon"></span>
+        </article>
       </div>
       <h2 class="review__title">
         Ваше общее впечатление:
@@ -94,10 +91,10 @@
           <label class="review__impression-title" for="positive">Скорее положительное</label>
         </article>
         <article class="review__container-impression">
-          <input class="review__impression-input"type="radio" value="впечатление отрицательное" name="impression" id="negative">
+          <input class="review__impression-input"type="radio" value="впечатление отрицательное" name="impression" name="impression" id="negative">
           <label class="review__impression-title" for="negative">Скорее отрицательное</label>
         </article>
-        <article class="review__container-impression review__container-impression-last">
+        <article class="review__container-impression review__container-impession--last">
           <input class="review__impression-input"type="radio" value="затрудняюсь ответить" name="impression" id="neutral">
           <label class="review__impression-title" for="neutral">Затрудняюсь ответить</label>
         </article>
@@ -106,25 +103,25 @@
         Посещенные достопримечательности:
       </h2>
     <article class="review__container-showplace">
-      <input class="review__showplace-input" type="checkbox" value="Devil bridge" id="devil" checked>
+      <input class="review__showplace-input" type="checkbox" value="Devil bridge" id="devil" name="showplace" checked>
       <label class="review__showplace-title" for="devil">Мост Дьявола</label>
     </article>
     <article class="review__container-showplace">
-      <input class="review__showplace-input" type="checkbox" value="Mountain" id="mountain" checked>
+      <input class="review__showplace-input" type="checkbox" value="Mountain" id="mountain" name="showplace" checked>
       <label class="review__showplace-title" for="mountain">Гора-Колокол</label>
     </article>
     <article class="review__container-showplace">
-      <input class="review__showplace-input" type="checkbox" value="Slide-park" id="park" checked>
+      <input class="review__showplace-input" type="checkbox" value="Slide-park" id="park" name="showplace" checked>
       <label class="review__showplace-title" for="park">Слайд-парк</label>
     </article>
-    <article class="review__container-showplace review__container-showplace-last">
-      <input class="review__showplace-input" type="checkbox" value="Red rock" id="rock">
+    <article class="review__container-showplace review__container-showplace--last">
+      <input class="review__showplace-input" type="checkbox" value="Red rock" id="rock" name="showplace">
       <label class="review__showplace-title" for="rock">Красные скалы</label>
     </article>
       <h2 class="review__title">
         Опишите свои эмоции:
       </h2>
-      <input class="review__emotion-input" id="emotion" type="text" name="Эмоций" placeholder="Опишите подробно все свои восторги">
+      <textarea class="review__emotion-input" form="text" name="Эмоции" placeholder="Опишите подробно все свои восторги">Опишите подробно все свои восторги</textarea>
       <button class="review-button button" type="submit">Отправить отзыв</button>
       <p class="review__legend">
         <small>
@@ -157,18 +154,18 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><svg class="social__logo" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__link-vkontakte" href="https://vk.com/htmlacademy"><svg class="social__logo" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="white"/>
               </svg></a>
           </li>
 
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><svg class="social__logo" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__link-telegram" href="https://t.me/htmlacademy"><svg class="social__logo" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36427 16.0695C9.10627 16.3275 8.89102 16.5428 8.39377 16.5428L8.74102 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02227 10.314L1.25977 8.823C0.224021 8.49975 0.205271 7.78725 1.47577 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="white"/>
               </svg></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><svg class="social__logo" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="social__link-youtube" href="https://www.youtube.com/user/htmlacademyru"><svg class="social__logo" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="white"/>
               </svg></a>
           </li>
