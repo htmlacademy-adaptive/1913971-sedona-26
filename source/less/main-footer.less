@@ -1,19 +1,18 @@
 .main-footer{
-  background:#ffffff;
+  background-color:@white-text;
 }
 .main-footer__contacts{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: @black-text;
   margin-top: 38.5px;
   margin-bottom: 33.5px;
 }
 .social__item{
-  background: #81B3D2;
+  background-color: @blue-back;
 }
 .social__list{
   display: flex;
@@ -27,35 +26,31 @@
   margin-bottom: 40px;
 }
 .copyright__text{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #000000;
+  color: @black-text;
 }
 .main-footer__copyright{
-
-  align-items: center;
   text-align: center;
   margin-bottom: 22.9px;
 }
-.social__link--vkontakte{
+.social__link-vkontakte{
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 17px;
   padding-bottom: 17px;
   margin-right: 6px;
 }
-.social__link--telegram{
+.social__link-telegram{
   padding-left: 13px;
   padding-right: 13.5px;
   padding-top: 15.02px;
   padding-bottom: 15.37px;
   margin-right: 6px;
 }
-.social__link--youtube{
+.social__link-youtube{
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 17px;
@@ -66,5 +61,21 @@
   margin-top: 28.5px;
   margin-bottom: 33.5px;
 }
-
-
+.main-footer__wrapper{
+  width: 320px;
+  margin:0 auto;
+}
+@media (min-width: @tablet-width){
+  .main-footer__wrapper{
+    display: flex;
+    width: 768px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+@media (min-width: @desktop-width){
+  .main-footer__wrapper{
+    width: 1200px;
+  }
+}

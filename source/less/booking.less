@@ -1,28 +1,32 @@
 .booking{
-  background:#FFFFFF;
+  background-color:@white-text;
 
 }
 .booking__title{
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #000000;
+  color: @black-text;
   margin-top: 38px;
 }
 .booking__describe{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'PT Sans, Arial, sans-serif';
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: @grey-text;
   margin-bottom: 32px;
 }
 .booking__wrapper{
-  display:flex;
+  display: flex;
   flex-direction: column;
+  width: 320px;
+}
+@media (min-width: @tablet-width){
+  .booking__wrapper{
+    width: 435px;
+  }
+
 }
