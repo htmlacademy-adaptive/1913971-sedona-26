@@ -1,39 +1,40 @@
-.logo{
-  background: url('../img/back-mobile.jpg'), no-repeat;
+.logo {
+  background: url("../img/back-mobile.jpg"), no-repeat;
   background-size: cover;
   text-align: center;
-  display:flex;
+  display: flex;
   flex-direction: column;
-}
-.logo-text{
-  padding-top: 52px;
-  padding-bottom: 67px;
-}
-.logo__triangle-top{
 
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background: url("../img/Sedona-tablet.jpg"), no-repeat;
+    background-size: 768px 518px;
+
+    }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background: url("../img/sedona-desktop.jpg"), no-repeat;
+    background-size: 1200px 518px;
+  }
+}
+
+.logo__text-index {
+  padding: 90px 19px 28px 19px;
+  margin: auto;
+}
+
+.logo__triangle-top {
   background-size: cover;
 }
 
-
-@media (min-width: @tablet-width){
-  .logo{
-    width: 768px;
-    background: url('../img/Sedona-tablet.jpg'), no-repeat;
-    background-size: 768px 518px;
-    height: 518px;
-  }
-  .logo__text-index{
-
-    width:461px;
-    height:349.97px;
-
+@media (min-width: @tablet-width) {
+  .logo__text-index {
+    width: 461px;
   }
 }
-@media (min-width: @desktop-width){
-  .logo{
-    width: 1200px;
-    background: url('../img/sedona-desktop.jpg'), no-repeat;
-    background-size: 1200px 518px;
-    height: 518px;
-}
+
+.logo__text {
+  margin: auto;
+  padding: 90px 19px 28px 19px;
 }

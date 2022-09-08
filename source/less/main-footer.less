@@ -1,81 +1,104 @@
-.main-footer{
-  background-color:@white-text;
+.main-footer {
+  background-color: @white-text;
 }
-.main-footer__contacts{
-  font-family: 'PT Sans, Arial, sans-serif';
+
+.main-footer__contacts {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: @black-text;
-  margin-top: 38.5px;
-  margin-bottom: 33.5px;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
-.social__item{
+
+.social__item {
   background-color: @blue-back;
 }
-.social__list{
+
+.social__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 10px;
-  list-style-type:none;
-  margin:0;
+  list-style-type: none;
+  margin-top: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
-.copyright__text{
-  font-family: 'PT Sans, Arial, sans-serif';
+
+.copyright__text {
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: @black-text;
+  margin-right: 9px;
 }
-.main-footer__copyright{
+
+.main-footer__copyright {
+  display: flex;
   text-align: center;
-  margin-bottom: 22.9px;
+  align-items: center;
+  justify-content: center;
 }
-.social__link-vkontakte{
+
+.social__link-vkontakte {
+  display: block;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 17px;
   padding-bottom: 17px;
-  margin-right: 6px;
 }
-.social__link-telegram{
+
+.social__link-telegram {
+  display: block;
   padding-left: 13px;
-  padding-right: 13.5px;
-  padding-top: 15.02px;
-  padding-bottom: 15.37px;
-  margin-right: 6px;
+  padding-right: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.social__link-youtube{
+
+.social__link-youtube {
+  display: block;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 17px;
   padding-bottom: 17px;
 }
 
-.contacts__hashtag{
-  margin-top: 28.5px;
-  margin-bottom: 33.5px;
+.contacts__hashtag {
+  margin-top: 29px;
+  margin-bottom: 34px;
+  text-decoration: none;
+  color: @black-text;
 }
-.main-footer__wrapper{
+
+.main-footer__wrapper {
   width: 320px;
-  margin:0 auto;
-}
-@media (min-width: @tablet-width){
-  .main-footer__wrapper{
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
     display: flex;
     width: 768px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 36px;
   }
-}
-@media (min-width: @desktop-width){
-  .main-footer__wrapper{
+
+  @media (min-width: @desktop-width) {
     width: 1200px;
   }
 }
