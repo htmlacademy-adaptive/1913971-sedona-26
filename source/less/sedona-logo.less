@@ -22,10 +22,15 @@
 .logo__text-index {
   padding: 90px 19px 28px 19px;
   margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    padding: 77px 19px 34px 19px;
+  }
 }
 
 .logo__triangle-top {
-  background-size: cover;
+  width: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,5 +41,38 @@
 
 .logo__text {
   margin: auto;
-  padding: 90px 19px 28px 19px;
+  padding: 52px 19px 10px 19px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 457px 78px;
+    padding-top: 95px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 101px;
+    padding-bottom: 63px;
+  }
+}
+
+
+.catalog-logo {
+  background: url("../img/back-desktop.jpg"), no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    background: url("../img/back-catalog-tablet.jpg"), no-repeat;
+    background-size: 768px 518px;
+
+    }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    background: url("../img/back-desktop-catalog.jpg"), no-repeat;
+    background-size: 1200px 518px;
+  }
 }

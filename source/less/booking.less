@@ -2,6 +2,7 @@
   background-color: @white-text;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .booking__title {
@@ -41,6 +42,8 @@
   flex-direction: column;
   width: 320px;
   text-align: center;
+  margin: auto;
+
   @media (min-width: @tablet-width) {
     width: 435px;
   }
@@ -48,4 +51,10 @@
 
 .booking__map {
   margin-bottom: 10px;
+  width: 100%;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+  margin-bottom: 0;
+  }
 }
