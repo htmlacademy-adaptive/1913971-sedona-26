@@ -1,7 +1,5 @@
-.button{
+.button {
   background-color: @blue-back;
-  font-family: 'PT Sans, Arial, sans-serif';
-
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -9,8 +7,46 @@
   color: @white-text;
   border: none;
 }
-.booking__button{
+
+.booking__button {
   padding-top: 21px;
   padding-bottom: 21px;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.review-button {
+  padding: 19px 34px 14px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 19px 60px 14px 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 19px 71px 14px 58px;
+  }
+}
+
+.modal-container__button {
+  padding: 18px 64px 14px 63px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 19px 108px 14px 107px;
+    margin-bottom: 49px;
+  }
+}
+
+.modal-container-ok__button {
+  padding: 19px 140px 14px 139px;
+  margin-bottom: 44px;
+  margin-top: 44px;
 }

@@ -1,49 +1,223 @@
-.main-header{
-  background-color:@white-text;
-  display: flex;
-  flex-direction: row;
-  height: 56px;
-  width:320px;
-  margin:0 auto;
+.main-header {
+  background-color: @white-text;
+  min-height: 56px;
+  margin: 0 auto;
+  justify-content: center;
 }
-.main-nav__list
-{ font-family: 'PT Sans, Arial, sans-serif';
+
+.main-nav {
+  position: relative;
+  min-height: 55px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    background-color: @white-text;
+    z-index: 0;
+  }
+}
+
+.main-nav__wrapper {
+  background-color: @blue-back;
+  position: absolute;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: center;
+    background-color: @white-text;
+    position: static;
+  }
+}
+
+.main-nav__list {
   font-weight: 700;
-  font-size: 14px;
   line-height: 21px;
-  list-style-type:none;
+  list-style-type: none;
   text-align: center;
   text-transform: uppercase;
   color: @black-text;
-  margin:0;
-  padding:0;
-}
-@media (min-width: @tablet-width) {
-  .main-nav__wrapper{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+
+
+
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 768px;
     margin: 0 auto;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .site-list {
-    width: 768px;
-    display:flex;
-    justify-content:space-around;
+    min-width: 768px;
+    display: flex;
+    justify-content: space-around;
   }
-  .main-nav__toggle {
-    display: none;
-  }
-  .main-container{
+
+  .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     margin: 0 auto;
   }
 }
-@media (min-width: @desktop-width){
-  .main-nav__wrapper{
-    width:1200px;
-    margin: 0 auto;
+
+.main-header__logo-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: @white-text;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    color: @black-text;
+  }
+}
+
+.site-list__link--active{
+  @media (min-width: @tablet-width) {
+  color: @active-site;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 23px;
+  height: 4px;
+  background-color: @blue-back;
+  box-shadow: 0 8px 0 0 @blue-back, 0 16px 0 0 @blue-back;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__wrapper {
+    background-color: @white-text;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  left: auto;
+  right: 15px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0px;
+    width: 23px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.site-list__item {
+  border-top: 1px solid @white-text;
+  border-bottom: 1px solid @black-text;
+  padding-top: 17px;
+  padding-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding: 0;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: @tablet-width) {
+    margin-right: 104px;
+    padding-right: 27px;
+    padding-left: 28px;
+    }
+  }
+
+  &:nth-child(1) {
+    @media (min-width: @tablet-width) {
+    padding-right: 47px;
+    padding-left: 48px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: @tablet-width) {
+    padding-right: 24px;
+    padding-left: 25px;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: @tablet-width) {
+    padding-right: 27px;
+    padding-left: 28px;
+    }
   }
 }
