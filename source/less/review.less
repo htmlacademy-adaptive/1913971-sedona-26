@@ -69,9 +69,7 @@
 
   @media (min-width: @tablet-width) {
     max-width: 234px;
-
   }
-
 }
 
 .review__impression-input {
@@ -255,52 +253,56 @@
   background-position: center;
 }
 
-@media (min-width: @tablet-width) {
-  .container-introduce-contact {
+.container-introduce-contact {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     max-width: 648px;
   }
 
-  .container-impression {
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+  }
+}
+
+.container-impression {
+  @media (min-width: @tablet-width) {
     display: flex;
     max-width: 576px;
     flex-wrap: wrap;
     margin-bottom: 32px;
   }
 
-  .container-showplace {
+  @media (min-width: @desktop-width) {
+    max-width: 854px;
+    margin-bottom: 56px;
+  }
+}
+
+.container-showplace {
+  @media (min-width: @tablet-width) {
     max-width: 480px;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 42px;
   }
 
-  .container-send-form {
+  @media (min-width: @desktop-width) {
+    max-width: 960px;
+    margin-bottom: 56px;
+  }
+}
+
+.container-send-form {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     min-width: 648px;
     align-items: baseline;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .container-introduce-contact {
-    max-width: 960px;
-  }
-
-  .container-impression {
-    max-width: 854px;
-    margin-bottom: 56px;
-  }
-
-  .container-showplace {
-    max-width: 960px;
-    margin-bottom: 56px;
-  }
-
-  .container-send-form {
+  @media (min-width: @desktop-width) {
     min-width: 768px;
   }
 }
@@ -314,3 +316,31 @@
     font-size: 30px;
   }
 }
+/*
+.review-mark {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: black;
+  border-radius: 50%;
+  left: -16px;
+  top: -10px;
+  margin-right: 16px;
+}
+
+.review__impression-input[type="radio"] + .review-mark {
+  border-radius: 50%;
+}
+.review__impression-input[type="radio"]:checked + .review-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  content: "";
+  transition: width 0.3s, height 0.3s;
+}
+*/
