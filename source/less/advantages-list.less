@@ -20,6 +20,10 @@
   padding-bottom: 40px;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0px;
+  }
+
   &--background-color-grey {
     background-color: @light-back;
     padding-top: 24px;
@@ -32,6 +36,9 @@
 
     @media (min-width: @desktop-width) {
       padding-bottom: 62px;
+      padding-right: 40px;
+      padding-left: 40px;
+  }
     }
 
     &:not(:last-child) {
@@ -41,14 +48,6 @@
         border-bottom: none;
       }
     }
-
-    &:last-child {
-      padding-bottom: 26px;
-    }
-  }
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 0;
   }
 
   &--bridge {
@@ -58,7 +57,7 @@
       padding-bottom: 0;
     }
   }
-}
+
 
 .advantages__title {
   font-weight: 700;

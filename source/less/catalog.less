@@ -197,18 +197,6 @@
 }
 
 .container-catalog {
-  &--background {
-    @media (min-width: @tablet-width) {
-      background-color: @catalog-back;
-    }
-
-    @media (min-width: @desktop-width) {
-      background: @black-text;
-      mix-blend-mode: normal;
-      opacity: 0.3;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -225,11 +213,29 @@
     opacity: 0.3;
     top: -69px;
   }
+
+  &--background {
+    @media (min-width: @tablet-width) {
+      background-color: @catalog-back;
+    }
+
+    @media (min-width: @desktop-width) {
+      background: @black-text;
+      mix-blend-mode: normal;
+      opacity: 0.3;
+    }
+  }
 }
 
 .catalog-cards__svg {
-  fill: @white-text;
-}
+  @media (min-width: @desktop-width) {
+      path {
+      fill: @white-text;
+      opacity: 1;
+      }
+    }
+  }
+
 
 .catalog__wrapper {
   display: flex;
