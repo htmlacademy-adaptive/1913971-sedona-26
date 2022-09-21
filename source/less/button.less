@@ -6,6 +6,17 @@
   text-transform: uppercase;
   color: @white-text;
   border: none;
+
+  &:hover {
+    background-color: @blue-hover;
+    transition: background-color, 0.4s;
+  }
+
+  &:active {
+    background-color: @blue-active;
+    color: @white-op03;
+    transition: background-color, color, 0.4s;
+  }
 }
 
 .booking__button {
@@ -20,6 +31,10 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 66px;
+  }
+
+  &:disabled {
+    background-color: @light-border;
   }
 }
 

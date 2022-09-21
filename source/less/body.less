@@ -3,20 +3,24 @@
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
+  background-color: @white-back;
+  margin: 0;
 }
 
 .main-container {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 320px;
+  min-width: 320px;
+  background-color: @white-text;
 
   @media (min-width: @tablet-width) {
-    width: 648px;
+    min-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
+    box-shadow: 0 4px 4px 0 rgba(@black-text, 0.25);
   }
 }
 
