@@ -1,12 +1,12 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    width: 768px;
+    min-width: 100%;
   }
 
   @media (min-width: @desktop-width) {
@@ -21,7 +21,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   &--background-color-grey {
@@ -38,25 +38,25 @@
       padding-bottom: 62px;
       padding-right: 40px;
       padding-left: 40px;
-  }
-    }
-
-    &:not(:last-child) {
-      border-bottom: 1px solid @grey-border;
-
-      @media (min-width: @tablet-width) {
-        border-bottom: none;
-      }
     }
   }
 
-  &--bridge {
-    padding-bottom: 35px;
+  &:not(:last-child) {
+    border-bottom: 1px solid @grey-border;
 
     @media (min-width: @tablet-width) {
-      padding-bottom: 0;
+      border-bottom: none;
     }
   }
+}
+
+&--bridge {
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 0;
+  }
+}
 
 
 .advantages__title {
@@ -69,7 +69,7 @@
   margin: 0;
 
   &--bridge {
-  padding-top: 39px;
+    padding-top: 39px;
   }
 
   &--background-color-grey {
@@ -99,7 +99,6 @@
   }
 }
 
-
 .advantages__describe {
   line-height: 21px;
   text-transform: uppercase;
@@ -111,11 +110,10 @@
   &--background-color-grey {
     color: @grey-text;
   }
-
 }
 
-
 .advantage-arguments {
+  width: 100%;
   margin-left: 18px;
   margin-right: 20px;
 }
@@ -195,10 +193,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 320px;
+  min-width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -216,7 +214,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    width: 768px;
+    min-width: 100%;
     margin-bottom: 59px;
     margin-top: 57px;
   }
@@ -267,6 +265,7 @@
 .advantages__picture {
   display: block;
   object-fit: cover;
+  margin: auto;
 
   @media (min-width: @tablet-width) {
     width: 512px;
@@ -279,6 +278,9 @@
 }
 
 .advantages__header {
+  max-width: 282px;
+  margin: auto;
+
   @media (min-width: @tablet-width) {
     max-width: 520px;
     margin: 0 auto;
@@ -291,10 +293,11 @@
 }
 
 .advantages-container {
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
@@ -316,6 +319,7 @@
 
 .advantages-container--reverse {
   flex-direction: row-reverse;
+  width: 100%;
 }
 
 .advantage-arguments__logo--housing {
