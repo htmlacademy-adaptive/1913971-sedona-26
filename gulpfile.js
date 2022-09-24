@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import {deleteAsync} from 'del';
 
 // Styles
 
@@ -20,7 +20,7 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
       csso()
     ]))
     .pipe(rename('style.min.css'))
@@ -99,7 +99,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-  return del('build');
+  return deleteAsync('build');
 };
 
 // Server
