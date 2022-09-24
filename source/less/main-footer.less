@@ -31,6 +31,7 @@
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -45,7 +46,7 @@
   }
 }
 
-.copyright__text {
+.social__copyright-text {
   display: flex;
   flex-direction: row;
   font-weight: 400;
@@ -57,7 +58,7 @@
   align-items: center;
 }
 
-.copyright__link {
+.social__copyright-link {
   display: flex;
   text-align: center;
   align-items: center;
@@ -65,53 +66,29 @@
   text-decoration: none;
 
   &:hover {
-    .copyright__logo {
+    .social__copyright-logo {
       fill: @blue-back;
       transition: fill, 0.4s;
     }
 
-    .copyright__text {
+    .social__copyright-text {
       color: @blue-back;
       transition: fill, 0.4s;
     }
   }
 
   &:active {
-    .copyright__logo {
+    .social__copyright-logo {
       fill: @link-active;
       transition: fill, 0.4s;
     }
 
-    .copyright__text {
+    .social__copyright-text {
       color: @link-active;
       transition: fill, 0.4s;
     }
   }
 }
-
-/*.social__link-vkontakte {
-  display: block;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-}
-
-.social__link-telegram {
-  display: block;
-  padding-left: 13px;
-  padding-right: 14px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.social__link-youtube {
-  display: block;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-}*/
 
 .social__link-vkontakte,
 .social__link-telegram,
@@ -156,10 +133,10 @@
     min-width: 100%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-    /*box-shadow: 0px -6px 4px 0px rgb(0 0 0 / 25%);*/
   }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
@@ -95,46 +95,60 @@
         Ваше общее впечатление:
       </h2>
       <div class="container-impression">
-        <div class="review__container-impression">
+        <fieldset class="review__container-impression">
+          <label class="fieldset__radio" for="positive" tabindex="0">
           <input class="review__impression-input" type="radio" value="впечатление положительное" id="positive" name="impression" checked>
           <span class="review-radiobutton"></span>
-          <label class="review__impression-title" for="positive">Скорее положительное</label>
-        </div>
-        <div class="review__container-impression">
+          <span class="review__impression-title" >Скорее положительное</span>
+          </label>
+        </fieldset>
+        <fieldset class="review__container-impression">
+          <label class="fieldset__radio" for="negative" tabindex="0">
           <input class="review__impression-input" type="radio" value="впечатление отрицательное" name="impression" name="impression" id="negative">
           <span class="review-radiobutton"></span>
-          <label class="review__impression-title" for="negative">Скорее отрицательное</label>
-        </div>
-        <div class="review__container-impression review__container-impession--last">
+          <span class="review__impression-title" >Скорее отрицательное</span>
+          </label>
+        </fieldset>
+        <fieldset class="review__container-impression review__container-impression--last">
+          <label class="fieldset__radio" for="neutral" tabindex="0">
           <input class="review__impression-input" type="radio" value="затрудняюсь ответить" name="impression" id="neutral">
           <span class="review-radiobutton"></span>
-          <label class="review__impression-title" for="neutral">Затрудняюсь ответить</label>
-        </div>
+          <span class="review__impression-title" >Затрудняюсь ответить</span>
+          </label>
+        </fieldset>
       </div>
       <h2 class="review__title review__title--line">
         Посещенные <br> достопримечательности:
       </h2>
     <div class="container-showplace">
-    <div class="review__container-showplace">
+    <fieldset class="review__container-showplace">
+      <label class="fieldset__checkbox" for="devil" tabindex="0">
       <input class="review__showplace-input" type="checkbox" value="Devil bridge" id="devil" name="showplace" checked>
       <span class="review-checkbox"></span>
-      <label class="review__showplace-title" for="devil">Мост Дьявола</label>
-    </div>
-    <div class="review__container-showplace">
+      <span class="review__showplace-title" >Мост Дьявола</span>
+      </label>
+    </fieldset>
+    <fieldset class="review__container-showplace">
+      <label class="fieldset__checkbox" for="mountain" tabindex="0">
       <input class="review__showplace-input" type="checkbox" value="Mountain" id="mountain" name="showplace" checked>
       <span class="review-checkbox"></span>
-      <label class="review__showplace-title" for="mountain">Гора-Колокол</label>
-    </div>
-    <div class="review__container-showplace">
+      <span class="review__showplace-title" >Гора-Колокол</span>
+      </label>
+    </fieldset>
+    <fieldset class="review__container-showplace">
+      <label class="fieldset__checkbox" for="park" tabindex="0">
       <input class="review__showplace-input" type="checkbox" value="Slide-park" id="park" name="showplace" checked>
       <span class="review-checkbox"></span>
-      <label class="review__showplace-title" for="park">Слайд-парк</label>
-    </div>
-    <div class="review__container-showplace review__container-showplace--last">
+      <span class="review__showplace-title">Слайд-парк</span>
+      </label>
+    </fieldset>
+    <fieldset class="review__container-showplace review__container-showplace--last">
+      <label class="fieldset__checkbox" for="rock" tabindex="0">
       <input class="review__showplace-input" type="checkbox" value="Red rock" id="rock" name="showplace">
       <span class="review-checkbox"></span>
-      <label class="review__showplace-title" for="rock">Красные скалы</label>
-    </div>
+      <span class="review__showplace-title">Красные скалы</span>
+      </label>
+    </fieldset>
     </div>
       <h2 class="review__title review__title--line">
         Опишите свои эмоции:
@@ -143,9 +157,7 @@
     <div class="container-send-form">
       <button class="review-button button" type="submit">Отправить отзыв</button>
       <p class="review__legend">
-        <small>
-          * — обязательные поля
-        </small>
+        * — обязательные поля
       </p>
     </div>
     </form>
@@ -162,7 +174,7 @@
       <h2 class="modal-container-ok__title modal-container__title">Ваш отзыв отправлен!</h2>
       <p class="modal-container-ok__text modal-container__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       <div class="container-button-ok">
-      <button class="modal-container-ok__button modal-container__button button" type="button">Закрыть окно</button>
+      <button class="modal-container-ok__button button" type="button">Закрыть окно</button>
       </div>
     </div>
 
@@ -176,7 +188,7 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link-vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link-vkontakte" href="https://vk.com/htmlacademy" alt="Вконтакте">
               <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
@@ -184,14 +196,14 @@
           </li>
 
           <li class="social__item">
-            <a class="social__link-telegram" href="https://t.me/htmlacademy">
+            <a class="social__link-telegram" href="https://t.me/htmlacademy" alt="Телеграм">
               <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social__link-youtube" href="https://www.youtube.com/user/htmlacademyru" alt="YouTube">
               <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
@@ -199,9 +211,9 @@
           </li>
         </ul>
       </div>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="copyright__text">Разработано
-        <svg class="copyright__logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a class="social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" alt="Htmlacademy">
+        <p class="social__copyright-text">Разработано
+        <svg class="social__copyright-logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
         </svg>
       </p>

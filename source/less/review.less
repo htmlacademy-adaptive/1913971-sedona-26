@@ -55,6 +55,7 @@
 }
 
 .review__introduce-text {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -65,7 +66,7 @@
   margin-bottom: 16px;
 
   @media (min-width: @desktop-width) {
-    padding-right: 170px;
+    padding-right: 203px;
   }
 
   &:hover {
@@ -87,6 +88,7 @@
 }
 
 .review__contact-text {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -94,10 +96,10 @@
   padding: 16px;
   background-color: @white-back;
   border: none;
-  margin-bottom: 16px;
+
 
   @media (min-width: @desktop-width) {
-    padding-right: 116px;
+    padding-right: 117px;
   }
 
   &:hover {
@@ -118,7 +120,7 @@
   }
 }
 
-.review__impression-title {
+.fieldset__radio {
   position: relative;
   font-weight: 700;
   font-size: 18px;
@@ -156,7 +158,7 @@
   background-color: @white-back;
 }
 
-.review__showplace-title {
+.fieldset__checkbox {
   position: relative;
   font-weight: 700;
   font-size: 18px;
@@ -164,6 +166,26 @@
   color: @black-text;
   padding-left: 60px;
   cursor: pointer;
+
+  &:hover {
+    .review-checkbox {
+      background-color: @light-border;
+      transition: background-color 0.4s;
+    }
+  }
+
+  &:active {
+    .review-checkbox {
+      background-color: @active-elem;
+      transition: background-color 0.4s;
+    }
+
+    .review-checkbox::before {
+      background-image: url("../img/tick-gray.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .review__showplace-input {
@@ -239,13 +261,13 @@
   padding-bottom: 11px;
   padding-top: 11px;
   align-items: baseline;
+  border: 0;
 
   @media (min-width: @tablet-width) {
     margin-right: 16px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 28px;
     padding-top: 17px;
     padding-bottom: 17px;
   }
@@ -308,6 +330,9 @@
   margin-bottom: 16px;
   padding-top: 11px;
   padding-bottom: 11px;
+  border: 0;
+  padding-left: 0;
+  padding-right: 0;
 
   @media (min-width: @tablet-width) {
     min-width: 224px;
@@ -391,35 +416,6 @@
   text-align: center;
 }
 
-/*
-.review-mark {
-  position: absolute;
-  left: 0;
-  width: 46px;
-  height: 46px;
-  background-color: black;
-  border-radius: 50%;
-  left: -16px;
-  top: -10px;
-  margin-right: 16px;
-}
-
-.review__impression-input[type="radio"] + .review-mark {
-  border-radius: 50%;
-}
-.review__impression-input[type="radio"]:checked + .review-mark::before {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 16px;
-  height: 16px;
-  background-color: black;
-  border-radius: 50%;
-  content: "";
-  transition: width 0.3s, height 0.3s;
-}
-*/
-
 .review__impression-input:checked + .review-radiobutton::before {
   content: "";
   width: 16px;
@@ -432,8 +428,22 @@
   transform: translate(-50%, -50%);
 }
 
+.review__impression-input:active + .review-radiobutton::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: @active-radio;
+  position: absolute;
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .review-radiobutton {
   position: absolute;
+  left: 2px;
+  top: -10px;
   background-color: @white-back;
   width: 46px;
   height: 46px;
@@ -442,20 +452,33 @@
 }
 
 .review__showplace-input:checked + .review-checkbox::before {
+  content: "";
   position: absolute;
   top: 15px;
   left: 13px;
   width: 22px;
   height: 16px;
   background-image: url("../img/tick.svg");
-  content: "";
+}
+
+.review__showplace-input:active + .review-checkbox {
+  background-image: url("../img/tick-gray.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .review-checkbox {
   position: absolute;
+  left: 2px;
+  top: -10px;
   background-color: @white-back;
   width: 46px;
   height: 46px;
   border-radius: 4px;
   align-self: center;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 16px;
 }
