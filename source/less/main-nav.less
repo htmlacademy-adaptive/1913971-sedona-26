@@ -1,19 +1,3 @@
-.main-header {
-  background-color: @white-text;
-  min-height: 56px;
-  margin: 0 auto;
-  justify-content: center;
-  min-width: 320px;
-
-  @media (min-width: @tablet-width) {
-    min-width: 768px;
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 1200px;
-  }
-}
-
 .main-nav {
   position: relative;
   min-height: 55px;
@@ -64,61 +48,6 @@
 
   @media (min-width: @desktop-width) {
     width: 1200px;
-  }
-}
-
-.site-list {
-  @media (min-width: @tablet-width) {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-
-.main-container {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    min-width: 768px;
-  }
-}
-
-.main-header__logo-image {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-
-.site-list__link {
-  text-decoration: none;
-  color: @white-text;
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-  line-height: 26px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 14px;
-    color: @black-text;
-  }
-
-  &--active {
-    @media (min-width: @tablet-width) {
-      color: @active-site;
-    }
-  }
-
-  &:hover {
-    color: @blue-back;
-  }
-
-  &:active {
-    color: @black-text;
-    opacity: 0.3;
   }
 }
 
@@ -211,69 +140,5 @@
   &:active::before,
   &:active::after {
     background-color: fade(#ffffff, 30%);
-  }
-}
-
-.site-list__item {
-  display: flex;
-  flex-direction: column;
-  padding-top: 17px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid @blue-bottom;
-  border-top: 1px solid @blue-top;
-
-  &:hover {
-    background-color: @blue-hover;
-    transition: background-color, 0.4s;
-  }
-
-  &:active {
-    background-color: @blue-active;
-    color: @white-op03;
-    transition: background-color, color, 0.4s;
-  }
-
-  @media (min-width: @tablet-width) {
-    border: none;
-    padding-top: 18px;
-    padding-bottom: 17px;
-
-    &:hover {
-      background-color: @white-text;
-    }
-
-    &:active {
-      background-color: @white-text;
-      color: @white-op03;
-    }
-  }
-
-  &:nth-child(2) {
-    @media (min-width: @tablet-width) {
-      margin-right: 104px;
-      padding-right: 27px;
-      padding-left: 28px;
-    }
-  }
-
-  &:nth-child(1) {
-    @media (min-width: @tablet-width) {
-      padding-right: 47px;
-      padding-left: 48px;
-    }
-  }
-
-  &:nth-child(3) {
-    @media (min-width: @tablet-width) {
-      padding-right: 24px;
-      padding-left: 25px;
-    }
-  }
-
-  &:nth-child(4) {
-    @media (min-width: @tablet-width) {
-      padding-right: 27px;
-      padding-left: 28px;
-    }
   }
 }

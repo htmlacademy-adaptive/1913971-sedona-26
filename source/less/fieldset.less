@@ -1,0 +1,61 @@
+.fieldset__radio {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @black-text;
+  padding-left: 62px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    max-width: 234px;
+  }
+
+  &:hover {
+    .review-radiobutton {
+      background-color: @light-border;
+      transition: background-color 0.4s;
+    }
+  }
+
+  &:active {
+    .review-radiobutton {
+      background-color: @active-elem;
+      transition: background-color 0.4s;
+    }
+
+    .review-radiobutton::before {
+      background-color: @active-radio;
+    }
+  }
+}
+
+.fieldset__checkbox {
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: @black-text;
+  padding-left: 60px;
+  cursor: pointer;
+
+  &:hover {
+    .review-checkbox {
+      background-color: @light-border;
+      transition: background-color 0.4s;
+    }
+  }
+
+  &:active {
+    .review-checkbox {
+      background-color: @active-elem;
+      transition: background-color 0.4s;
+    }
+
+    .review-checkbox::before {
+      background-image: url("../img/tick-gray.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  }
+}

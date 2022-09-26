@@ -1,0 +1,120 @@
+.site-list {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: @white-text;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    color: @black-text;
+  }
+
+  &--active {
+    @media (min-width: @tablet-width) {
+      color: @active-site;
+    }
+  }
+
+  &:hover {
+    color: @blue-back;
+  }
+
+  &:active {
+    color: @black-text;
+    opacity: 0.3;
+  }
+}
+
+.site-list__item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid @blue-bottom;
+  border-top: 1px solid @blue-top;
+
+  &:hover {
+    background-color: @blue-hover;
+    transition: background-color, 0.4s;
+  }
+
+  &:active {
+    background-color: @blue-active;
+    color: @white-op03;
+    transition: background-color, color, 0.4s;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
+
+    &:hover {
+      background-color: @white-text;
+    }
+
+    &:active {
+      background-color: @white-text;
+      color: @white-op03;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: @tablet-width) {
+      margin-right: 158px;
+      padding-right: 27px;
+      padding-left: 28px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 240px;
+      padding-right: 71px;
+      padding-left: 71px;
+    }
+  }
+
+  &:nth-child(1) {
+    @media (min-width: @tablet-width) {
+      padding-right: 47px;
+      padding-left: 48px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 91px;
+      padding-left: 91px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: @tablet-width) {
+      padding-right: 24px;
+      padding-left: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 68px;
+      padding-left: 68px;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: @tablet-width) {
+      padding-right: 27px;
+      padding-left: 28px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-right: 71px;
+      padding-left: 71px;
+    }
+  }
+}

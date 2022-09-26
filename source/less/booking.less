@@ -12,7 +12,7 @@
   text-transform: uppercase;
   color: @black-text;
   margin-top: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -53,8 +53,32 @@
   margin-bottom: 10px;
   width: 100%;
   border: none;
+  background-image: url("../img/map.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x");
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.booking__button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 49px;
+  text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
+
+  &:disabled {
+    background-color: @light-border;
   }
 }

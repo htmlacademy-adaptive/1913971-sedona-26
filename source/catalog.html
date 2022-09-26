@@ -1,226 +1,221 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <link rel="stylesheet" href="./css/style.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <title>Седона</title>
-</head>
-<body class="page__body">
-  <header class="main-header">
-    <div class="main-container">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона.">
-    </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--active" href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/">
-              HTML ACADEMY
-            </a>
-          </li>
-      </ul>
+  <head>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <title>Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-container">
+        <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона.">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html">
+                Главная
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active" href="catalog.html">
+                Фото и видео
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                Форма отзыва
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/">
+                HTML ACADEMY
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      </nav>
-    </div>
-  </header>
-  <main class="main-container">
-    <h1 class="visually-hidden">Седона</h1>
-    <section class="logo catalog-logo">
-      <img class="logo__text" width="229" height="39" src="img/textlogo-sedona.svg" alt="седона">
-      <img class="logo__triangle-top" width="320" height="57" src="img/intro-triangle.svg" alt="графика блока">
-    </section>
-    <section class="catalog">
-      <div class="catalog__wrapper">
-        <header class="catalog__header">
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Седона</h1>
+      <section class="logo logo__catalog">
+        <img class="logo__text" width="229" height="39" src="img/textlogo-sedona.svg" alt="седона">
+      </section>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <header class="catalog__header">
+            <h2 class="catalog__title">
+              Фото и видео
+            </h2>
+            <p class="catalog__slogan">
+              Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+            </p>
+          </header>
+        </div>
+      </section>
+      <section class="catalog-cards">
+        <div class="catalog-cards__wrapper">
+          <figure class="catalog-cards__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-first-desktop.webp 1x, img/photo-one-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-first-tablet.webp 1x, img/photo-one-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-first-mobile.webp 1x, img/photo-one-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-first-desktop.jpg 1x, img/photo-one-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-first-tablet.jpg 1x, img/photo-one-tablet@2x.jpg 2x">
+                <img class="catalog-cards__image catalog-cards__image--width" src="img/photo-1-mobile.jpg" alt="Неродные просторы" width="280" height="280" srcset="img/photo-one-mobile@2x.jpg 2x" >
+              </picture>
+            </a>
+            <figcaption class="catalog__container">
+              <div class="catalog-cards__title-autor-container">
+                <h3 class="catalog-cards__title">Неродные просторы</h3>
+                <p class="catalog-cards__autor">Автор фото: Борис</p>
+              </div>
+              <div class="catalog-cards__like-container">
+                <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                  <use class="catalog-use" xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <p class="catalog-cards__like">1350</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="catalog-cards__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-two-desktop.webp 1x, img/photo-two-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-two-tablet.webp 1x, img/photo-two-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-two-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-two-desktop.jpg 1x, img/photo-two-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-two-tablet.jpg 1x, img/photo-two-tablet@2x.jpg 2x">
+                <img class="catalog-cards__image" src="img/photo-2-mobile.jpg" alt="Местная растительность" width="280" height="280" srcset="img/photo-two-mobile@2x.jpg 2x">
+              </picture>
+            </a>
+            <figcaption class="catalog__container">
+              <div class="catalog-cards__title-autor-container">
+                <h3 class="catalog-cards__title">Местная растительность</h3>
+                <p class="catalog-cards__autor">Автор фото: Сергей </p>
+              </div>
+              <div class="catalog-cards__like-container">
+                <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <p class="catalog-cards__like">143</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="catalog-cards__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-three-desktop.webp 1x, img/photo-three-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-three-tablet.webp 1x, img/photo-three-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-three-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-three-desktop.jpg 1x, img/photo-three-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-three-tablet.jpg 1x, img/photo-three-tablet@2x.jpg 2x">
+                <img class="catalog-cards__image" src="img/photo-3-mobile.jpg" alt="Дорога на север" width="280" height="280" srcset="img/photo-three-mobile@2x.jpg 2x">
+              </picture>
+            </a>
+            <figcaption class="catalog__container catalog__container--background">
+              <div class="catalog-cards__title-autor-container">
+                <h3 class="catalog-cards__title">Дорога на север</h3>
+                <p class="catalog-cards__autor">Автор фото: Петр</p>
+              </div>
+              <div class="catalog-cards__like-container">
+                <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <p class="catalog-cards__like">96</p>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="catalog-cards__item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-four-desktop.webp 1x, img/photo-four-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-four-tablet.webp 1x, img/photo-four-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-four-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-four-desktop.jpg 1x, img/photo-four-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-four-tablet.jpg 1x, img/photo-four-tablet@2x.jpg 2x">
+                <img class="catalog-cards__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола" srcset="img/photo-four-mobile@2x.jpg 2x">
+              </picture>
+            </a>
+            <figcaption class="catalog__container">
+              <div class="catalog-cards__title-autor-container">
+                <h3 class="catalog-cards__title">Мост дьявола</h3>
+                <p class="catalog-cards__autor">Автор фото: Антон</p>
+              </div>
+              <div class="catalog-cards__like-container">
+                <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <p class="catalog-cards__like">254</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__video-wrapper">
           <h2 class="catalog__title">
-            Фото и видео
+            Все еще сомневаетесь?
           </h2>
           <p class="catalog__slogan">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
-        </header>
-      </div>
-    </section>
-    <section class="catalog-cards">
-
-      <div class="catalog-cards__wrapper">
-        <figure class="catalog-cards__item">
-        <a href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-first-desktop.webp 1x, img/photo-one-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-first-tablet.webp 1x, img/photo-one-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-first-mobile.webp 1x, img/photo-one-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-first-desktop.jpg 1x, img/photo-one-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-first-tablet.jpg 1x, img/photo-one-tablet@2x.jpg 2x">
-            <img class="catalog-cards__image catalog-cards__image--width" src="img/photo-1-mobile.jpg" alt="Неродные просторы" width="280" height="280" srcset="img/photo-one-mobile@2x.jpg 2x" >
-          </picture>
-        </a>
-      <figcaption class="container-catalog">
-      <div class="catalog-cards__title-autor-container">
-        <h3 class="catalog-cards__title">Неродные просторы</h3>
-        <p class="catalog-cards__autor">Автор фото: Борис</p>
-      </div>
-      <div class="catalog-cards__like-container">
-        <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <use class="catalog-use" xlink:href="img/sprite.svg#icon-like"></use>
-        </svg>
-        <p class="catalog-cards__like">1350</p>
-      </div>
-      </figcaption>
-        </figure>
-      <figure class="catalog-cards__item">
-        <a href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-two-desktop.webp 1x, img/photo-two-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-two-tablet.webp 1x, img/photo-two-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-two-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/photo-two-desktop.jpg 1x, img/photo-two-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-two-tablet.jpg 1x, img/photo-two-tablet@2x.jpg 2x">
-            <img class="catalog-cards__image" src="img/photo-2-mobile.jpg" alt="Местная растительность" width="280" height="280" srcset="img/photo-two-mobile@2x.jpg 2x">
-          </picture>
-        </a>
-      <figcaption class="container-catalog">
-      <div class="catalog-cards__title-autor-container">
-        <h3 class="catalog-cards__title">Местная растительность</h3>
-        <p class="catalog-cards__autor">Автор фото: Сергей </p>
-      </div>
-      <div class="catalog-cards__like-container">
-        <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <use xlink:href="img/sprite.svg#icon-like"></use>
-        </svg>
-        <p class="catalog-cards__like">143</p>
-      </div>
-      </figcaption>
-    </figure>
-      <figure class="catalog-cards__item">
-        <a href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-three-desktop.jpg 1x, img/photo-three-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-three-tablet.jpg 1x, img/photo-three-tablet@2x.jpg 2x">
-            <img class="catalog-cards__image" src="img/photo-3-mobile.jpg" alt="Дорога на север" width="280" height="280" srcset="img/photo-three-mobile@2x.jpg 2x">
-          </picture>
-        </a>
-      <figcaption class="container-catalog container-catalog--background">
-      <div class="catalog-cards__title-autor-container">
-        <h3 class="catalog-cards__title">Дорога на север</h3>
-        <p class="catalog-cards__autor">Автор фото: Петр</p>
-      </div>
-      <div class="catalog-cards__like-container">
-        <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <use xlink:href="img/sprite.svg#icon-like"></use>
-        </svg>
-        <p class="catalog-cards__like">96</p>
-      </div>
-    </figcaption>
-    </figure>
-      <figure class="catalog-cards__item">
-        <a href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-four-desktop.jpg 1x, img/photo-four-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-four-tablet.jpg 1x, img/photo-four-tablet@2x.jpg 2x">
-            <img class="catalog-cards__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола" srcset="img/photo-four-mobile@2x.jpg 2x">
-          </picture>
-        </a>
-      <figcaption class="container-catalog">
-      <div class="catalog-cards__title-autor-container">
-        <h3 class="catalog-cards__title">Мост дьявола</h3>
-        <p class="catalog-cards__autor">Автор фото: Антон</p>
-      </div>
-      <div class="catalog-cards__like-container">
-        <svg class="catalog-cards__svg" width="23" height="21" xmlns="http://www.w3.org/2000/svg" fill="none">
-          <use xlink:href="img/sprite.svg#icon-like"></use>
-          </svg>
-        <p class="catalog-cards__like">254</p>
-      </div>
-      </figcaption>
-      </figure>
-      </div>
-    </section>
-    <section class="catalog">
-      <div class="catalog__video-wrapper">
-        <h2 class="catalog__title">
-          Все еще сомневаетесь?
-        </h2>
-        <p class="catalog__slogan">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-      </div>
-        <!--<a href="#">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-          <img class="catalog__video" src="img/video-mobile.jpg" width="280" height="177" alt="видео" srcset="img/video-mobile@2x.jpg 2x">
-          </picture>
-        </a>-->
-
+        </div>
         <iframe class="catalog__video" width="280" height="177" src="https://www.youtube.com/embed/MB_iFDDNtrw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-  </main>
-  <footer class="main-footer">
-    <div class="main-container">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
-        <a class="contacts__hashtag" href="">#VISITSEDONA</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__wrapper">
+          <div class="main-footer__contacts contacts">
+            <a class="contacts__hashtag" href="">#VISITSEDONA</a>
+          </div>
+          <div class="main-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link-vkontakte" href="https://vk.com/htmlacademy">
+                  <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Вконтакте">
+                    <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link-telegram" href="https://t.me/htmlacademy">
+                  <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Телеграм">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                  <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="YouTube">
+                    <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="social__copyright-text">
+              Разработано
+              <svg class="social__copyright-logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Htmlacademy">
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+              </svg>
+            </p>
+          </a>
+        </div>
       </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link-vkontakte" href="https://vk.com/htmlacademy" alt="Вконтакте">
-              <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social__item">
-            <a class="social__link-telegram" href="https://t.me/htmlacademy" alt="Телеграм">
-              <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link-youtube" href="https://www.youtube.com/user/htmlacademyru" alt="YouTube">
-              <svg class="social__logo" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <a class="social__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" alt="Htmlacademy">
-        <p class="social__copyright-text">Разработано
-        <svg class="social__copyright-logo" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
-        </svg>
-      </p>
-      </a>
-    </div>
-  </div>
-  </footer>
-<script src="js/script.js"></script>
-</body>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
